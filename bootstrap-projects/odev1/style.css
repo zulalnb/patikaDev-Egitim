@@ -27,3 +27,15 @@ body {
 .card-text {
   color: #a4b0be;
 }
+
+#aboutUs > * {
+  background-color: #e9ecef !important;
+}
+
+#aboutUs h5 {
+  color: orange;
+}
+
+#aboutUs h1 {
+  color: #5758bb;
+}
