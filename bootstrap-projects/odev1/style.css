@@ -2,6 +2,10 @@ body {
   background-color: #e9ecef !important;
 }
 
+#mainPage {
+  min-height: 100vh !important;
+}
+
 .card-body h5 {
   font-weight: bold;
   color: #6f1e51;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!doctype html> -->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -15,8 +15,9 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
 
-    <title>Hello, world!</title>
+    <title>Bookstore</title>
   </head>
 
   <body>
@@ -67,25 +68,29 @@
     </nav>
 
     <div class="container">
-      <div class="jumbotron mt-5 text-center">
+      <div
+        class="
+          jumbotron
+          d-flex
+          flex-column
+          align-items-center
+          justify-content-center
+        "
+        id="mainPage"
+      >
         <h1 class="display-4 text-danger">Merhaba!</h1>
-        <p class="lead">
+        <p class="lead text-center">
           Kitap Bulvarı sitemize hoşgeldiniz! Çeşitli kitaplarımız için
           <a href="#products">kitaplar</a> sayfamıza bakabilirsiniz. Seriler
           indirimlidir.
-        </p>
-        <hr class="my-4" />
-        <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
         </p>
         <a class="btn btn-primary btn-lg" href="#aboutUs" role="button"
           >Hakkımızda</a
         >
       </div>
 
-      <div class="row mt-5 pt-5" id="products">
-        <h2 class="mb-4 pt-5">Bilim Kurgu</h2>
+      <div class="row" id="products">
+        <h2 class="mb-4">Bilim Kurgu</h2>
 
         <div class="row row-cols-1 row-cols-md-3" id="scifi">
           <div class="col mb-4">
@@ -93,43 +98,54 @@
               <img
                 src="https://cdn.cimri.io/image/1000x1000/dunefrankherbert_270811172.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Dune"
               />
               <div class="card-body">
                 <h5 class="card-title">Dune</h5>
                 <p class="card-text">Frank Herbert</p>
-                <span class="price">123</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
+
           <div class="col mb-4">
             <div class="card h-100">
               <img
                 src="https://cdn.cimri.io/image/1000x1000/ben-robot-isaac-asimov_172868085.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Ben, Robot"
               />
               <div class="card-body">
                 <h5 class="card-title">Ben, Robot</h5>
                 <p class="card-text">Isaac Asimov</p>
-                <span class="price">50</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
+
           <div class="col mb-4">
             <div class="card h-100">
               <img
                 src="https://cdn.cimri.io/image/1000x1000/uzayda-piknik-arkadi-strugatski-boris-strugatski_196119090.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Uzayda Piknik"
               />
               <div class="card-body">
                 <h5 class="card-title">Uzayda Piknik</h5>
                 <p class="card-text">
                   Arkadi Natanoviç Strugatski ve Boris Natanoviç Strugatski
                 </p>
-                <span class="price">123</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
         </div>
@@ -141,41 +157,52 @@
               <img
                 src="https://cdn.cimri.io/image/1000x1000/birgndavidnicholls_61787668.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Bir Gün"
               />
               <div class="card-body">
                 <h5 class="card-title">Bir Gün</h5>
                 <p class="card-text">David Nicholls</p>
-                <span class="price">123</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
+
           <div class="col mb-4">
             <div class="card h-100">
               <img
                 src="https://cdn.cimri.io/image/1000x1000/ayni-yildizin-altinda-john-green_157762995.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Aynı Yıldızın Altında"
               />
               <div class="card-body">
                 <h5 class="card-title">Aynı Yıldızın Altında</h5>
                 <p class="card-text">John Green</p>
-                <span class="price">123</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
+
           <div class="col mb-4">
             <div class="card h-100">
               <img
                 src="https://cdn.cimri.io/image/1000x1000/krkmantolumadonnasabahattinali_109016869.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Kürk Mantolu Madonna"
               />
               <div class="card-body">
                 <h5 class="card-title">Kürk Mantolu Madonna</h5>
                 <p class="card-text">Sabahattin Ali</p>
-                <span class="price">123</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
         </div>
@@ -187,41 +214,52 @@
               <img
                 src="https://cdn.cimri.io/image/1000x1000/sherlock-holmes-butun-hikayeler-tek-cilt-ozel-basim-s-artur-conan-doyle_338979310.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Sherlock Holmes"
               />
               <div class="card-body">
                 <h5 class="card-title">Sherlock Holmes</h5>
                 <p class="card-text">Sir Arthur Conan Doyle</p>
-                <span class="price">123</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
+
           <div class="col mb-4">
             <div class="card h-100">
               <img
                 src="https://cdn.cimri.io/image/240x240/da-vinci-sifresi-dan-brown_12430967.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Da Vinci Şifresi"
               />
               <div class="card-body">
                 <h5 class="card-title">Da Vinci Şifresi</h5>
                 <p class="card-text">Dan Brown</p>
-                <span class="price">123</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
+
           <div class="col mb-4">
             <div class="card h-100">
               <img
                 src="https://cdn.cimri.io/image/1000x1000/dogu-ekspresinde-cinayet-agatha-christie_300075676.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Doğu Ekspresinde Cinayet"
               />
               <div class="card-body">
                 <h5 class="card-title">Doğu Ekspresinde Cinayet</h5>
                 <p class="card-text">Agatha Christie</p>
-                <span class="price">123</span>
+                <p><span class="price">123</span></p>
               </div>
+              <a class="btn btn-info w-100" href="#" role="button"
+                >Sepete Ekle</a
+              >
             </div>
           </div>
         </div>
