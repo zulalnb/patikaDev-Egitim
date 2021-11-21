@@ -7,7 +7,7 @@ var myVar = setInterval(function () {
 }, 1000);
 
 function showTime() {
-  var simdi = new Date();
+  var date = new Date();
   var days = [
     "Pazar",
     "Pazartesi",
@@ -17,7 +17,7 @@ function showTime() {
     "Cuma",
     "Cumartesi",
   ];
-  var day = days[simdi.getDay()];
+  var day = days[date.getDay()];
   document.querySelector("#myClock").innerHTML =
-    simdi.toLocaleTimeString() + " " + day; // return 23:59:59
+    date.toLocaleTimeString() + " " + day; // return 23:59:59
 }
