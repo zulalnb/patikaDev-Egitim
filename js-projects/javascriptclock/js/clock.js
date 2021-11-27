@@ -19,5 +19,5 @@ function showTime() {
   ];
   var day = days[date.getDay()];
   document.querySelector("#myClock").innerHTML =
-    date.toLocaleTimeString() + " " + day; // return 23:59:59
+    date.toLocaleTimeString("tr-TR") + " " + day; // return 23:59:59
 }
