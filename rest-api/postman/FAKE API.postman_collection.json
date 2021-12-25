@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "7f40336f-dd49-44b4-8ae2-2ea974d8b0e1",
+		"name": "FAKE API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL EMPLOYEES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/employees",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET EMPLOYEE DETAILS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/employees/:employee_id",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"employees",
+						":employee_id"
+					],
+					"variable": [
+						{
+							"key": "employee_id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FILTER EMPLOYEES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/employees/?q=Tate",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"employees",
+						""
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "Female",
+							"disabled": true
+						},
+						{
+							"key": "roleId",
+							"value": "3",
+							"disabled": true
+						},
+						{
+							"key": "_page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "_limit",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "_sort",
+							"value": "first_name",
+							"disabled": true
+						},
+						{
+							"key": "_order",
+							"value": "desc",
+							"disabled": true
+						},
+						{
+							"key": "q",
+							"value": "Tate"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RELATE ROLES AND EMPLOYEES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/employees?_expand=role",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "_embed",
+							"value": "employees",
+							"disabled": true
+						},
+						{
+							"key": "_expand",
+							"value": "role"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD AN EMPLOYEE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"first_name\": \"Zülal\",\r\n      \"last_name\": \"Nebin\",\r\n      \"email\": \"zllnbn1997@gmail.com\",\r\n      \"gender\": \"Female\",\r\n      \"roleId\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/employees",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE AN EMPLOYEE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/employees/:employee_id",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"employees",
+						":employee_id"
+					],
+					"variable": [
+						{
+							"key": "employee_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE AN EMPLOYEE",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"last_name\": \"TESTOO\",\r\n      \"roleId\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/employees/:employee_id",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"employees",
+						":employee_id"
+					],
+					"variable": [
+						{
+							"key": "employee_id",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE AN EMPLOYEE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n      \"first_name\": \"Zülal\",\r\n      \"last_name\": \"NEBİN\",\r\n      \"email\": \"zllnbn1997@gmail.com\",\r\n      \"roleId\": 2\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/employees/:employee_id",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"employees",
+						":employee_id"
+					],
+					"variable": [
+						{
+							"key": "employee_id",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:3000"
+		}
+	]
+}

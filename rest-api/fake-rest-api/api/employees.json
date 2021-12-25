@@ -1,0 +1,169 @@
+{
+  "employees": [
+    {
+      "id": 2,
+      "first_name": "Maria",
+      "lastName": "Sharapova",
+      "email": "marsharapova@mail.com",
+      "gender": "Female",
+      "roleId": 3
+    },
+    {
+      "id": 3,
+      "first_name": "James",
+      "last_name": "Bond",
+      "email": "jamesbond@mail.com",
+      "gender": "Male",
+      "roleId": 2
+    },
+    {
+      "id": 4,
+      "first_name": "Arzu",
+      "last_name": "Diri",
+      "email": "arzudiri@mail.com",
+      "gender": "Female",
+      "roleId": 2
+    },
+    {
+      "id": 5,
+      "first_name": "Mehmet",
+      "lastName": "Gonca",
+      "email": "mgonca@mail.com",
+      "gender": "Male",
+      "roleId": 1
+    },
+    {
+      "id": 6,
+      "first_name": "Michael",
+      "last_name": "Scott",
+      "email": "mscott@mail.com",
+      "gender": "Male",
+      "roleId": 2
+    },
+    {
+      "id": 7,
+      "first_name": "Dwight",
+      "last_name": "Schrute",
+      "email": "schrute@mail.com",
+      "gender": "Male",
+      "roleId": 1
+    },
+    {
+      "id": 8,
+      "first_name": "Jim",
+      "lastName": "Harpert",
+      "email": "jimhar@mail.com",
+      "gender": "Male",
+      "roleId": 2
+    },
+    {
+      "id": 9,
+      "first_name": "Erin",
+      "last_name": "Von",
+      "email": "evon@mail.com",
+      "gender": "Female",
+      "roleId": 1
+    },
+    {
+      "first_name": "Zülal",
+      "last_name": "NEBİN",
+      "email": "zllnbn1997@gmail.com",
+      "roleId": 2,
+      "id": 10
+    },
+    {
+      "id": 11,
+      "first_name": "Guilnette",
+      "lastName": "Wybrow",
+      "email": "gwybrowa@mail.com",
+      "gender": "Male",
+      "roleId": 3
+    },
+    {
+      "id": 12,
+      "first_name": "Orville",
+      "last_name": "Swynley",
+      "email": "oswynley@mail.com",
+      "gender": "Female",
+      "roleId": 2
+    },
+    {
+      "id": 13,
+      "first_name": "Duncan",
+      "last_name": "McCudden",
+      "email": "dnccudden@mail.com",
+      "gender": "Male",
+      "roleId": 2
+    },
+    {
+      "id": 14,
+      "first_name": "Dulsea",
+      "last_Name": "Yea",
+      "email": "dyead@mail.com",
+      "gender": "Female",
+      "roleId": 3
+    },
+    {
+      "id": 15,
+      "first_name": "Martina",
+      "last_name": "Sidebotham",
+      "email": "marside@mail.com",
+      "gender": "Female",
+      "roleId": 2
+    },
+    {
+      "id": 16,
+      "first_name": "Tobe",
+      "last_name": "Jurrieo",
+      "email": "tjurrieo@mail.com",
+      "gender": "Female",
+      "roleId": 3
+    },
+    {
+      "id": 17,
+      "first_name": "Stewart",
+      "last_name": "Tate",
+      "email": "stewaratte@mail.com",
+      "gender": "Male",
+      "roleId": 2
+    },
+    {
+      "id": 18,
+      "first_name": "Alfons",
+      "last_name": "D'Alwis",
+      "email": "adalwish@mail.com",
+      "gender": "Female",
+      "roleId": 2
+    },
+    {
+      "id": 19,
+      "first_name": "Alexandro",
+      "last_name": "Paver",
+      "email": "apaver@mail.com",
+      "gender": "Male",
+      "roleId": 2
+    },
+    {
+      "id": 20,
+      "first_name": "Wallie",
+      "lastName": "Tesh",
+      "email": "wtesh@mail.com",
+      "gender": "Male",
+      "roleId": 3
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "name": "Manager"
+    },
+    {
+      "id": 2,
+      "name": "Engineer"
+    },
+    {
+      "id": 3,
+      "name": "Intern"
+    }
+  ]
+}

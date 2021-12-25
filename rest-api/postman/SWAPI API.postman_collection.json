@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "8b6aa553-f005-49dc-bcef-c0a17fc02fbc",
+		"name": "SWAPI API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FILMS",
+			"item": [
+				{
+					"name": "GET ALL FILMS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/films/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"films",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET A FILM",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/films/:id/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"films",
+								":id",
+								""
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH FILM",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/films/?search=New%20Hope",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"films",
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "New%20Hope"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://swapi.dev/api"
+		}
+	]
+}
